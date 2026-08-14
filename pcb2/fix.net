@@ -1,0 +1,40 @@
+.title Power Supply Circuit - Fixed
+.include "D:/projects/ups_boards/pcb1/models.lib"
+.save all
+.probe all
+
+* Power Supply (ADDED!)
+Vinput VCC GND 12V
+
+* J1 Connector (3-pin header)
+X1 __X1
+
+* LM358 Op-Amp (FIXED: V+ = VCC)
+XU1 Net_Q1_G Net_Q1_S Net_U1A_P GND VCC LM358
+
+* Feedback Network
+Rb1 Net_U1A_P GND 56
+R1 VCC Net_D1_K 1k
+Ra1 Net_D1_K Net_U1A_P 2k
+D1 Net_D1_K GND DZENER_3V3
+
+* Current Sense
+RSense1 Net_Q1_S GND 0.01
+R4 GND Net_Q1_G 470k
+
+* MOSFET: DRAIN, GATE, SOURCE, SUBSTRATE (FIXED!)
+MQ1 load Net_Q1_G Net_Q1_S NC Q1_0 IRFZ44N
+
+* Output Capacitors
+C1 VCC load 4700u
+C3 VCC load 4700u
+C2 VCC load 4700u
+
+* LED Indicator
+D2 load Net_D2_A LED_GENERIC
+R2 VCC Net_D2_A 1k
+
+* Initial conditions for faster convergence
+.ic V(load)=0V V(VCC)=12V
+
+.end
