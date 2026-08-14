@@ -710,7 +710,7 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": ""
+      "workbook_filename": "pcb1.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -724,7 +724,7 @@
         "uuid": "0501d330-5f5d-44b9-93b3-0b7cc442c6a9"
       }
     ],
-    "used_designators": "D1-2,#PWR1-4,#FLG1-3,#GND1,R1-7,RSense1,V1,U1-3,C1-4,Q1-2,Ra1-3,K1,SW1-2,BT1,Rb1-2,Rh2,Load1,J1-2,F1",
+    "used_designators": "D1-2,#PWR1-4,#FLG1-5,#GND1,R1-7,RSense1,V1,U1-3,C1-4,Q1-2,Ra1-3,K1,SW1-2,BT1,Rb1-2,Rh2,Load1,J1-2,F1",
     "variants": []
   },
   "sheets": [
