@@ -42,4 +42,8 @@ PCB="$DIR/pcb1.kicad_pcb"
 "$KICAD" pcb export svg --layers F.SilkS,F.Fab --mode-single --page-size-mode 2 --exclude-drawing-sheet \
   --output "$DIR/pcb1_Silkscreen_Values.svg" "$PCB"
 
+# Copper layer, MIRRORED + black-and-white + negative (copper/background swapped)
+"$KICAD" pcb export svg --layers F.Cu --mirror --negative --black-and-white --mode-single --page-size-mode 2 --exclude-drawing-sheet \
+  --output "$DIR/pcb1_Fcu_mirrored_negative.svg" "$PCB"
+
 echo "Done."
