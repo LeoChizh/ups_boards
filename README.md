@@ -2,6 +2,8 @@
 
 A current-limited, inrush-safe low-side load switch for a battery-backed UPS, built entirely from an NE555 timer and a dual op-amp — no dedicated hot-swap/current-limiter IC.
 
+![Schematic](photos/schematic.png)
+
 ## What it does
 
 - Switches the return path to a load (in this build: a Raspberry Pi + WiFi router) through an N-channel MOSFET (`Q1`, IRFZ44N).
