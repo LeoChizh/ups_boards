@@ -1,4 +1,0 @@
-(fp_lib_table
-	(version 7)
-	(lib (name "myLibrary") (type "KiCad") (uri "D:/projects/ups_boards/myLibrary.pretty") (options "") (descr ""))
-)
