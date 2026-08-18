@@ -2,7 +2,7 @@
 
 A current-limited, inrush-safe low-side load switch for a battery-backed UPS, built entirely from an NE555 timer and a dual op-amp — no dedicated hot-swap/current-limiter IC.
 
-![Schematic](photos/schematic.png)
+![Schematic](photos/schematic.svg)
 
 ## What it does
 
