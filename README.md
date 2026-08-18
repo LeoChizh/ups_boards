@@ -27,6 +27,14 @@ Single-sided board. Components are inserted from one face; the copper (opposite 
 
 Built and running — powers a Raspberry Pi 4 and WiFi router off a 12V battery bank, verified across repeated input power cycling with no interruption to the load.
 
+## System schematic
+
+This load switch is one module in the larger UPS. The full system schematic shows how it connects to the rest: mains input through breakers into the AC/DC supply and battery charger, a DPDT relay (`K1`) for mains/battery switchover, over-discharge protection on the battery, and this load switch driving the output USB-C chargers.
+
+![System schematic](photos/ups_schema.svg)
+
+`ups_schema/` holds this top-level schematic (KiCad 10, schematic-only — no PCB layout, since it's a system diagram rather than a board to fabricate).
+
 ## Build photos
 
 | Enclosure, closed | Enclosure, open |
